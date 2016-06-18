@@ -16,10 +16,11 @@ server
     access_log /var/www/Leverage/logs/access.log;
     error_log /var/www/Leverage/logs/error.log;
 
+    include uwsgi_params;
+
     location /
     {
-        root /var/www/Leverage/leverage/app/templates/app;
-        index index.html;
+        uwsgi_pass unix:///run/leverage/socket;
     }
 
     location /static/
