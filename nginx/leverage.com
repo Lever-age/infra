@@ -1,3 +1,5 @@
+# Symlink this file into /etc/nginx/sites-enabled on Ubuntu 14.04
+
 server
 {
     listen 80;
