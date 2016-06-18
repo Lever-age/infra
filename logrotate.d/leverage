@@ -1,0 +1,11 @@
+/var/www/Leverage/logs/*.log {
+        copytruncate
+        daily
+        dateformat .%Y.%m.%d
+        dateext
+        missingok
+        notifempty
+	rotate 366
+	compress
+	delaycompress
+}

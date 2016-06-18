@@ -19,6 +19,7 @@ The destiation this repository is cloned to is henceforth referred to as $CONFDI
 
 - nginx/leverage.com -> /etc/nginx/sites-enabled/leverage.com
 - init/leverage.conf -> /etc/init/leverage.conf
+- logrotate.d/leverage -> /etc/logrotate.d/leverage
 
 ## Start services ##
 
