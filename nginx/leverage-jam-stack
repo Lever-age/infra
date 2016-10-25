@@ -1,0 +1,26 @@
+# Frontend
+server {
+    listen       80;
+    server_name  campaign-finance.phl.io;
+
+    access_log /var/log/nginx/leverage-frontend.access.log;
+    error_log /var/log/nginx/leverage-frontend.error.log;
+
+    location / {
+      root /usr/local/www;
+    }
+}
+
+# API
+server {
+    listen       80;
+    server_name  api.leveragecampaignfinance.org;
+
+    access_log /var/log/nginx/leverage-api.access.log;
+    error_log /var/log/nginx/leverage-api.error.log;
+
+    location / {
+        add_header 'Access-Control-Allow-Origin' '*';
+        proxy_pass http://127.0.0.1:8228$request_uri;
+    }
+}
