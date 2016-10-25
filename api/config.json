@@ -1,0 +1,9 @@
+{
+ "listen": {
+   "address": "127.0.0.1",
+   "port": 8228
+ },
+ "storage": {
+   "path": "/srv/leverage/leverage.sqlite"
+ }
+}
