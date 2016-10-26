@@ -34,13 +34,13 @@ git checkout -t origin/master
 
 ## Install application ##
 
-``
+```
 git clone https://github.com/Lever-age/frontend.git /usr/local/src/frontend
 git clone https://github.com/Lever-age/api.git /usr/local/src/api
 ( cd /usr/local/src/api && npm install )
 mkdir /usr/local/www
 $REPODIR/bin/deploy-frontend.sh
-``
+```
 
 ## Populate database ##
 
