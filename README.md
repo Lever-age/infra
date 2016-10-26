@@ -44,15 +44,21 @@ $REPODIR/bin/deploy-frontend.sh
 
 ## Populate database ##
 
-The API configuration held in this repository assumes a sqlite database
-will exist with populated data at a particular filesystem location. This
-location is configured in api/config.json.
+A sqlite3 database will need to exist at the location specified 
+by `storage.path` in etc/api/config.json
 
-The population of a production grade database is outside the scope of this
-deployment guide, but a test database can be easily generated from within
-the api project by running `npm run test-data`. The generated test database
-will be placed in the api project directory at test/data/db.sqlite, and may
-be moved from there to the desired filesystem location.
+### Testing database ###
+
+```
+cd /usr/local/src/api
+npm run test-data
+mv test/data/db.sqlite $STORAGEPATH
+```
+
+### Production database ###
+
+The deployment and population of a production database is outside
+of the scope of this deployment guide
 
 ## Link config files to system locations ##
 
