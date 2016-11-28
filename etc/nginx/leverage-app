@@ -1,7 +1,7 @@
 # Frontend
 server {
-    listen       80;
-    server_name  campaign-finance.phl.io;
+    listen       80 default;
+    server_name  campaign-finance.phl.io leveragecampaignfinance.org www.leveragecampaignfinance.org leveragecampaignfinance.com www.leveragecampaignfinance.com;
 
     access_log /var/log/nginx/leverage-frontend.access.log;
     error_log /var/log/nginx/leverage-frontend.error.log;
