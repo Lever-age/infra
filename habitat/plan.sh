@@ -50,7 +50,6 @@ do_install() {
   cp -vr api/controllers ${pkg_prefix}/api
   cp -vr api/lib ${pkg_prefix}/api
   cp -r api/node_modules ${pkg_prefix}/api
-  cp -v $PLAN_CONTEXT/../etc/api/config.json ${pkg_prefix}/api
 
   mkdir -p ${pkg_prefix}/frontend
   cp -v frontend/*.html ${pkg_prefix}/frontend
