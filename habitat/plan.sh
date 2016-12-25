@@ -6,7 +6,7 @@ pkg_license=(MIT)
 pkg_upstream_url=https://github.com/Lever-age/leverage
 pkg_source=leverage.tar.gz
 pkg_deps=(bochener/node)
-pkg_expose=(80)
+pkg_expose=(8228)
 pkg_build_deps=(core/coreutils core/git)
 pkg_interpreters=(bin/env)
 
