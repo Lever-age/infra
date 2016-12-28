@@ -64,8 +64,8 @@ of the scope of this deployment guide
 
 ### Ubuntu 14.04 ###
 
-- nginx/leverage-jam-stack -> /etc/nginx/sites-enabled/leverage-jam-stack
-- init/leverage-api.conf -> /etc/init/leverage-api.conf
+- etc/nginx/leverage-app -> /etc/nginx/sites-enabled/leverage-app
+- etc/init/leverage-api.conf -> /etc/init/leverage-api.conf
 
 ## Start services ##
 
